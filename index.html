@@ -1,0 +1,340 @@
+<!DOCTYPE html><html><head> 
+  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+
+    body {
+
+      margin: 0;
+
+       background: black;
+
+      font-family: 'arial', sans serif;
+
+    }
+
+    .contenedor {
+
+      background: white;
+
+      width: 50%;
+
+      margin: 0 auto;
+
+      padding: 10px 10px;
+
+      text-align: justify;
+
+    }
+
+    
+
+    .contenedor img {
+
+      width: 100%;
+
+    }
+
+    
+
+    @media (max-width:600px)  { 
+
+      .contenedor {
+
+        width: 95%;
+
+      }
+
+    }
+
+    
+
+    .video-container {
+
+        position: relative;
+
+        padding-bottom: 56.25%;
+
+        padding-top: 15px;
+
+        height: 0;
+
+color: skyblue;
+
+         overflow: hidden;
+
+    }
+
+    
+
+    .video-container iframe {
+
+        position: absolute;
+
+        top:0;
+
+        left: 0;
+
+        width: 100%;
+
+        height: 100%;
+
+    }
+
+    
+
+    .topnav {
+
+      overflow: hidden;
+
+      background-color: red;
+
+    }
+
+    
+
+    .topnav a {
+
+      float: left;
+
+      display: block;
+
+      color: white;
+
+      text-align: center;
+
+      padding: 14px 16px;
+
+      text-decoration: none;
+
+      font-size: 12px;
+
+    }
+
+    
+
+    .topnav a:hover {
+
+      background-color: red;
+
+      color: white;
+
+    }
+
+    
+
+    .topnav a.active {
+
+      background-color: red;
+
+      color: white;
+
+    }
+
+    
+
+    .topnav .icon {
+
+      display: none;
+
+    }
+
+    
+
+    .codembed {
+
+                float: left;
+
+                width: 100%;
+
+                height: auto;
+
+            }
+
+            .commenter {
+
+                float: left;
+
+            }
+
+            .commenter img {
+
+                width: 35px;
+
+                height: 35px;
+
+            }
+
+            .comment-text-area {
+
+                float: left;
+
+                width: 100%;
+
+                height: auto;
+
+            }
+
+    
+
+            .textinput {
+
+                float: left;
+
+                width: 100%;
+
+                min-height: 30px;
+
+                outline: none;
+
+                resize: none;
+
+                border: 1px solid grey;
+
+            }
+
+            .button {
+
+  background-color: #6200ED; /* Green */
+
+  border: 3px solid Black;
+
+ 
+
+  text-align: center;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+   color:white;
+
+  cursor: pointer;
+
+    font-weight: bold;
+
+    width: 115px;
+
+  }
+
+    </style>
+
+    
+
+    </head>
+
+    
+
+    <body>
+
+     
+
+      <div class="contenedor">
+
+        <div class="topnav" id="myTopnav">
+
+            
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+
+        <i class="fa fa-bars"></i>
+
+      </a>
+
+    </div>
+
+    <br>
+
+    
+
+        <input class="button" onclick="toggleFullscreen()" type="button" value="Fullscreen TV">
+
+<br>
+
+<br>
+
+    <div class="video-container"> Espera 10 segunsos hasta que cargue...
+
+        
+
+     <iframe class="embed-responsive-item" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="true"
+
+             
+
+     
+
+             id="my_iframe"
+
+         
+
+             scrolling="no" src="https://dumper-true.com/dashdumper.php?url=aHR0cHM6Ly9kY2UtYWstbGl2ZXd3ZGF6bi5ha2FtYWl6ZWQubmV0L2Rhc2hkcm0vZGF6bi1saW5lYXItMDM5L3N0cmVhbS5tcGQ/cD13ZWI&k1=ODJmOGUyYTE3ZGFjNDRjMGExOGY2NjA0NzkzNDljNTk=&k2=MWIxNDRmNzNlNmZlZmU5MWNkMDVmODUwZTJiNTg5ZDA=&aut=true&lang=0
+
+" width="100%" height="100%"
+
+            
+
+             ></iframe>
+
+     </div>
+
+    <br>
+
+    </div>
+
+    <script>
+
+    function myFunction() {
+
+      var x = document.getElementById("myTopnav");
+
+      if (x.className === "topnav") {
+
+        x.className += " responsive";
+
+      } else {
+
+        x.className = "topnav";
+
+      }
+
+    }
+
+    </script>
+
+    <footer>
+
+    
+
+    
+
+    
+
+    </footer>
+
+<script>function toggleFullscreen() {
+
+  let elem = document.querySelector("iframe");
+
+  if (!document.fullscreenElement) {
+
+    elem.requestFullscreen().catch((err) => {
+
+      alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
+
+    });
+
+  } else {
+
+    document.exitFullscreen();
+
+  }
+
+}</script>
+
+  
+
+      
+
+      
+
+     
