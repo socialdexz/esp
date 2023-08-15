@@ -1,340 +1,465 @@
-<!DOCTYPE html><html><head> 
+
+
+
+
+
+    
+    
+    
+    
+
+    <!DOCTYPE html><html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Agenda Deportiva</title>
+
+<meta http-equiv="refresh" content="200">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="expires" content="-1">
+
+
+
+ 
+ 
+<title>Agenda</title> 
+
+
+
+
+   
+  </a>
+</div>
+
+
+	
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">    
+<style>
+body {
+  margin: 0;
+   background: #ececec;
+  font-family: 'arial', sans serif;
+}
+.contenedor {
+  background: #E3E3E3;
+  width: 65%;
+  height: 95%;
+  margin: 0 auto;
+  padding: 10px 10px;
+  text-align: auto;
+}
+
+
+
+@media (max-width:600px)  { 
+  .contenedor {
+    width: 100%;
+  }
+}
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnavz {
+  overflow: hidden;
+  background-color: #8B45AE;
+  padding:10px;
   
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
+}
 
-    body {
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 12px;
+}
 
-      margin: 0;
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
 
-       background: black;
+.topnav a.active {
+  background-color: #8B45AE;
+  color: white;
+}
 
-      font-family: 'arial', sans serif;
+.topnav .icon {
+  display: none;
+}
 
-    }
 
-    .contenedor {
 
-      background: white;
 
-      width: 50%;
 
-      margin: 0 auto;
 
-      padding: 10px 10px;
+</style>
 
-      text-align: justify;
+<script type="text/javascript" async="" src="//s10.histats.com/js15_as.js"></script><script async="" defer="" src="https://t.dtscout.com/pv/?_a=v&amp;_h=tucanaldeportivo.com&amp;_s=1&amp;_ss=707xy7x50o&amp;_pv=1&amp;_ls=0&amp;_cc=pe&amp;_pl=m&amp;_b=chrome%40106&amp;_cbid=15lk&amp;_cb=_dtspv.c" id="dtspv_15lk"></script><script src="https://data-beacons.s-onetag.com/dataBeacons.min.js"></script><script id="sovrn_standalone_beacon" src="https://ap.lijit.com/www/sovrn_beacon_standalone/sovrn_standalone_beacon.js"></script></head>
 
-    }
-
+<body link="#547484" onload="guardaHorario();dT();" vlink="#547484">
+ 
+<div class="contenedor">
     
 
-    .contenedor img {
-
-      width: 100%;
-
-    }
-
+     
     
+    <div class="topnav" id="myTopnav">
+  <a href="aqui la genda inicio" class="active">AGENDA DEPORTIVA</a>
+  <a href="aqui los canales por defecto" target="_blank">MAS CANALES</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<br>
+  
+<div id="wrapper">
+<ul class="menu">
 
-    @media (max-width:600px)  { 
 
-      .contenedor {
 
-        width: 95%;
 
-      }
 
-    }
-
-    
-
-    .video-container {
-
-        position: relative;
-
-        padding-bottom: 56.25%;
-
-        padding-top: 15px;
-
-        height: 0;
-
-color: skyblue;
-
-         overflow: hidden;
-
-    }
-
-    
-
-    .video-container iframe {
-
-        position: absolute;
-
-        top:0;
-
-        left: 0;
-
-        width: 100%;
-
-        height: 100%;
-
-    }
-
-    
-
-    .topnav {
-
-      overflow: hidden;
-
-      background-color: red;
-
-    }
-
-    
-
-    .topnav a {
-
-      float: left;
-
-      display: block;
-
-      color: white;
-
-      text-align: center;
-
-      padding: 14px 16px;
-
-      text-decoration: none;
-
-      font-size: 12px;
-
-    }
-
-    
-
-    .topnav a:hover {
-
-      background-color: red;
-
-      color: white;
-
-    }
-
-    
-
-    .topnav a.active {
-
-      background-color: red;
-
-      color: white;
-
-    }
-
-    
-
-    .topnav .icon {
-
-      display: none;
-
-    }
-
-    
-
-    .codembed {
-
-                float: left;
-
-                width: 100%;
-
-                height: auto;
-
-            }
-
-            .commenter {
-
-                float: left;
-
-            }
-
-            .commenter img {
-
-                width: 35px;
-
-                height: 35px;
-
-            }
-
-            .comment-text-area {
-
-                float: left;
-
-                width: 100%;
-
-                height: auto;
-
-            }
-
-    
-
-            .textinput {
-
-                float: left;
-
-                width: 100%;
-
-                min-height: 30px;
-
-                outline: none;
-
-                resize: none;
-
-                border: 1px solid grey;
-
-            }
-
-            .button {
-
-  background-color: #6200ED; /* Green */
-
-  border: 3px solid Black;
 
  
 
-  text-align: center;
-
-  text-decoration: none;
-
-  font-size: 14px;
-
-   color:white;
-
-  cursor: pointer;
-
-    font-weight: bold;
-
-    width: 115px;
-
-  }
-
-    </style>
 
     
+ 
 
-    </head>
 
-    
 
-    <body>
 
-     
+<div>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 
-      <div class="contenedor">
-
-        <div class="topnav" id="myTopnav">
-
-            
-
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-
-        <i class="fa fa-bars"></i>
-
-      </a>
-
-    </div>
-
-    <br>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<style type="text/css">
 
-        <input class="button" onclick="toggleFullscreen()" type="button" value="Fullscreen TV">
+
+* {
+    margin: ;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.container {
+    margin-top: 150px
+}
+
+body {
+    background:#ececec;
+    font-family: 'Open Sans', Arial, Helvetica, Sans-serif, Verdana, Tahoma
+}
+
+ul {
+    list-style-type: none
+}
+
+a {
+    color: white;
+    text-decoration: none
+}
+
+.accordion {
+    width: 100%;
+    max-width: 384px;
+    margin: 1px auto 20px;
+    background: white;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 0px
+} 
+
+.accordion .link {
+    cursor: pointer;
+    display: block;
+    padding: 10px 0px 10px 10px;
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 2px solid #ececec;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease
+}
+
+.accordion li:last-child .link {
+    border-bottom: 1;
+}
+
+.accordion li i {
+    position: absolute;
+    top: 1px;
+    left: 12px; 
+    font-size: 18px;
+    color: #ececec;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease
+}
+
+.accordion li i.fa-chevron-down {
+    right: 10px;
+    left: auto;
+    font-size: 16px
+}
+
+.accordion li.open .link {
+    color: #8B45AE;
+}
+
+.accordion li.open i {
+    color: #8B45AE;
+}
+
+.accordion li.open i.fa-chevron-down {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.submenu {
+    display: none;
+    background: white ;
+    font-size: 12px
+}
+
+.submenu li {
+    border-bottom: 2px solid #ececec;
+}
+
+.submenu a {
+    display: block;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold; 
+    color: gray;
+    padding: 10px;
+    padding-left: 42px;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease
+}
+
+.submenu a:hover {
+    background: #8B45AE;
+    color: white 
+}</style>
+ 
+
+
+<script type="text/javascript">
+$(function() {
+var Accordion = function(el, multiple) {
+this.el = el || {};
+this.multiple = multiple || false;
+
+var links = this.el.find('.link');
+
+links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+}
+
+Accordion.prototype.dropdown = function(e) {
+var $el = e.data.el;
+$this = $(this),
+$next = $this.next();
+
+$next.slideToggle();
+$this.parent().toggleClass('open');
+
+if (!e.data.multiple) {
+$el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+};
+}
+
+var accordion = new Accordion($('#accordion'), false);
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</script>
+<style id="page-skin-1" type="text/css"><!--
+/*Fix: Unnecessary elements removed*/
+.widget-item-control,.item-control.blog-admin,
+.continue,.loadmore,.thread-chrome.thread-collapsed,
+.singleton-element:not(.cookie-choices-info),
+.noAllowNewComments .comment-reply,
+.comments .hidden {display:none}
+/*Fix: Show lightbox*/
+.CSS_LIGHTBOX{z-index:90001!important}
+/*Fix: Responsive images*/
+a[style^=margin-left],
+a[imageanchor]:not([style*=float]) {
+margin-right: 0 !important;
+margin-left: 0 !important;
+}
+.widget-content img,
+img[data-original-height],
+img[data-original-width] {height: auto;}
+/*Fix: Responsive videos*/
+.BLOG_video_class, .b-hbp-video, .b-uploade {
+max-width: 100%;
+}
+/*Fix: Comment Editor*/
+#comment-editor{
+border:0;
+width:100%;
+min-height:220px
+}
+:root{
+--font:"Poppins",sans-serif;
+--main-color:var(--brand-color-1);
+--brand-color-1:#8B45AE;
+--black-1:#E3E3E3;
+--black-2:#181818;
+--black-3:#4f4e50;
+--black-4:#807e81;
+--text-color:255,255,255;
+--swiper-theme-color:var(--main-color)}
+
+--></style>
+<style type="text/css">/*<![CDATA[*/
+/* => CSS Global */
+
+/*]]>*/</style>
+<style>
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap);*{margin:0;padding:0;box-sizing:border-box;list-style:none;text-decoration:none;color:rgb(var(--text-color));font-family:var(--font)}body{min-height:100vh;background:var(--black-1)}.global-wrapper-container{display:flex;gap:20px;flex-direction:column;justify-content:space-between;height:100%;min-height:100vh}.p20{padding:20px}.footer{text-align:center;padding:20px} a{-webkit-tap-highlight-color: transparent; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
+/*Header Navbar*/
+.components-wrapper .header{box-shadow:0 4px 30px rgb(0,0,0,.1);border-radius:10px}.header{display:flex;justify-content:space-between;align-items:center;font-size:20px;background:var(--black-1);max-width:90%;margin:0 auto;position:relative}.header__logo{color:rgb(var(--text-color),1);padding:10px 0;font-size:30px;display:flex;align-items:center}.header__logo img{max-height:50px}.header__logo span{color:var(--main-color)}.header__nav{display:flex;align-items:center;justify-content:center;gap:50px;flex-grow:3}.header__nav-menu{display:flex;align-items:center;gap:30px}.header__nav-menu li{position:relative}.nav-menu__item,.nav-menu__item i{color:rgb(var(--text-color),.5);font-size:16px;transition:color 0.3s ease;height:100%;padding:15px 0;display:inline-block;transition:color 0.4s ease}.nav-menu__item.nav-menu__item--active,.nav-menu__item.nav-menu__item--active i{color:rgb(var(--text-color),1)}.header__nav-menu li:hover>.nav-menu__item,.header__nav-menu li:hover .nav-menu__item i{color:rgb(var(--text-color),1)}.header__searcher{display:flex;justify-content:flex-end;flex:1 1 0%}.search-btn,.close-btn,.menu-btn{display:flex;justify-content:center;align-items:center;padding:0;font-size:25px;background:none;outline:none;border:none;cursor:pointer}.menu-btn{margin-right:10px;display:none}.sub-menu{display:block;position:absolute;left:0;transform:translateX(-50px);margin-left:auto;margin-right:auto;width:200px;border-radius:0 0 5px 5px;font-size:16px;overflow:hidden;background:var(--black-1);z-index:1;visibility:hidden;opacity:0;z-index:-1;transition:opacity 0.2s ease,visibility 0.1s ease}.sub-menu li a{padding:20px;display:block}.sub-menu li:not(:last-child) a{border-bottom:1px solid #000}.sub-menu li a:hover{background:var(--black-2)}a .sub-menu-icon{margin-left:7px;transition:transform 0.3s ease-in-out;font-size:13px}.header__nav-menu li:hover>.sub-menu{visibility:visible;opacity:1;z-index:999}.header__nav-menu li:hover>a .sub-menu-icon{transform:rotate(90deg)}.header.logo-menu{gap:30px}.header.logo-menu .header__logo,.header.logo-menu .header__nav{order:1;flex-grow:0}.header.logo-menu .header__searcher{order:1}@media only screen and (max-width:870px){.menu-btn{display:inline-block;margin-right:20px}.header__nav{display:block;position:fixed;top:0;left:0;width:auto;height:100vh;z-index:999;background:var(--black-2);margin-left:-300px;transition:margin-left .3s ease}#menu-closer{position:fixed;top:0;left:0;display:block;height:100vh;z-index:998;width:100%;background:rgba(0,0,0,.74);backdrop-filter:blur(5px);display:none}.header__nav.active{transition:margin-left .3s ease;margin-left:0}.header__nav-menu{height:100%;z-index:999;flex-grow:0;flex-direction:column;justify-content:flex-start;align-items:flex-start;gap:0}.nav-menu__item{display:block;padding:15px 40px;width:100%}.header__nav-menu li{display:flex;flex-direction:column;width:100%}.sub-menu{display:block;position:unset;transform:translateX(0);margin:0;width:auto;border-radius:0;border-top:0;visibility:visible;opacity:1;z-index:inherit;background:var(--black-2);height:0;transition:height .3s ease-in-out}.sub-menu.sub-menu-active{height:auto}.header__nav-menu li:hover>.sub-menu{visibility:visible;opacity:1}.header__nav-menu li:hover>a .sub-menu-icon{transform:rotate(90deg)}.nav-menu__item,.nav-menu__item i{height:inherit}.nav-menu__item{padding:5px 30px;border-radius:10px}.nav-menu__item i{margin-right:10px}.header__nav-menu li{padding:10px}.sub-menu li a{padding:5px 40px;color:rgb(var(--text-color),.6)}.sub-menu li:not(:last-child) a{border-bottom:none}.sub-menu li a:hover{color:rgb(var(--text-color),1)}.header__nav-menu .nav-menu__item:not(:first-child){border-top:1px solid #000}.nav-menu__item.nav-menu__item--active,.nav-menu__item.nav-menu__item--active i{background:var(--black-3)}}
+
+/*Searcher*/
+.searcher-action{display:flex;align-items:center;gap:20px;position:absolute;top:0;left:0;width:100%;height:100%;margin-top:-500px;transition:margin-top 0.2s ease-in-out}.bs-search{display:block;width:calc(100% - 30px);height:60%}.bs-search input{width:100%;height:100%;border-radius:10px;overflow:hidden;padding:20px;outline:none;text-transform:capitalize;background:rgba(255,255,255,.2);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);border:1px solid rgba(255,255,255,.1);font-size:16px}.bs-search input::placeholder{color:rgba(var(--text-color),.6);text-transform:none}.close-btn>i.fa-close{font-size:30px}.header__logo,.header__nav,.search-btn{transition:opacity 0.3s ease-in-out}.hide-header .header__logo,.hide-header .header__nav,.hide-header .search-btn,.hide-header .menu-btn{opacity:0;z-index:-1}.hide-header .searcher-action{margin-top:0}
+
+
+/*Cards*/
+.LinkList,.cards-sections,#disqus_thread{max-width:90%;margin:0 auto;}.grid-header{display:flex;justify-content:space-between;align-items:center;gap:20px; margin-bottom:20px	}.see-all-btn i{margin-left:10px;color:var(--main-color)}.cards-sections .swiper{margin-bottom:70px;margin-top:20px}.LinkList .widget{margin:30px 0;}.cards-sections{margin-top:30px}
+.fav-card.skin1{display:grid;grid-template-columns:1fr;background:var(--black-1);position:relative}.fav-card.skin1 .fav-card-info{display:flex;justify-content:center;align-items:center;flex-direction:column;position:absolute;top:0;left:0;width:100%;height:100%}.fav-card.skin1 .watch-wrapper{display:none}.fav-card.skin1 .fav-card-info h3{width:100%;text-align:center;font-size:25px}.fav-card.skin1 .fav-img img{opacity:.55}
+.post-card{border-radius:10px;overflow:hidden;position:relative;display:block}.post-card-title{position:absolute;bottom:0;left:0;padding:20px;width:100%;height:100%;background:linear-gradient(to top,rgba(0,0,0,.8) 10%,rgba(0,0,0,.1));display:flex;align-items:flex-end;justify-content:center}.post-card-title h3{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-size:16px}.post-card{background:var(--black-2)}.post-img img{transition:transform .3s ease-in-out}.post-card:hover>.post-img img{transform:scale(1.15)}
+.cards-grid{max-width:90%;margin:0 auto;display:grid;grid-template-columns:repeat(7,1fr);grid-gap:20px}.post-img img{width:100%}.post-card{aspect-ratio: 2/3;}@media only screen and (max-width:1550px){.cards-grid{grid-template-columns:repeat(6,1fr)}}@media only screen and (max-width:1260px){.cards-grid{grid-template-columns:repeat(5,1fr)}}@media only screen and (max-width:1000px){.cards-grid{grid-template-columns:repeat(4,1fr)}}@media only screen and (max-width:800px){.cards-grid{grid-template-columns:repeat(3,1fr)}}@media only screen and (max-width:540px){.cards-grid{grid-template-columns:repeat(2,1fr)}}
+.casual-wrapper{max-width:90%;margin:20px auto}
+/*Temp*/
+.blog-pager{display:flex;justify-content:center;align-item:center;gap:15px;margin:20px auto}
+.blog-pager a{display:inline-block;padding:5px 5px; border-radius:10px;background: var(--main-color)}
+.casual-wrapper h2{text-transform: capitalize}
+</style>
+<!-- all item pages -->
+<style>
+.post-body-wrapper{max-width:90%;margin:20px auto}.post-header{padding:20px;border-radius:10px;overflow:hidden;display:grid;grid-template-columns:200px 1fr;grid-gap:20px;background:var(--black-2)}.post-header .image-and-btn img{width:100%;border-radius:10px;aspect-ratio:2 / 3;margin-bottom:10px}.bs-favs,.delete-btn{display:block;width:100%;padding:15px 20px;font-size:15px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.1);border-radius:10px;cursor:pointer}.delete-btn{background:var(--main-color)}.none-btn{display:none}.post-header__info{display:flex;flex-direction:column;gap:25px}.post-header__info ul{display:flex;gap:15px}.post-header__info ul li{display:inline-block;border:1px solid rgba(255,255,255,.1);padding:5px 10px;border-radius:5px;font-weight:500}.post-header__info ul li.tmdb-rate{background:gold;border:1px solid #736201}.tmdb-rate,.tmdb-rate i{color:#000}.post-header__info p.resume{opacity:.7}.sub-menu{border-top:3px solid var(--main-color)}@media screen and (max-width:870px){.post-header{grid-template-columns:1fr;text-align:center}.image-and-btn{width:40%;margin:0 auto;text-align:center}.post-header .image-and-btn img{width:80%;margin:0 auto}.post-header__info{align-items:center}.post-header__info p.resume{text-align:justify}}@media screen and (max-width:490px){.post-header__info ul li{font-size:14px}.image-and-btn{width:70%}.post-header__info{align-items:center}.post-header__info p.resume{text-align:justify}}@media only screen and (max-width: 870px) { .sub-menu { border-top: none; } }
+  
+  
+/*Seasons*/
+.season-list{margin-top:3px}.select-season{display:flex;align-items:center;margin-bottom:30px;position:relative;gap:20px}.select-season select{background:var(--black-2);outline:none;border:none;padding:10px 20px;font-size:16px;font-weight:400;border-radius:5px;border-right:20px solid transparent}.caps-grid{display:grid;grid-template-columns:repeat(5,1fr);grid-gap:20px;text-align:center;opacity:0;transition:opacity 0.4s ease;overflow:hidden}.caps-grid.animation{opacity:1;animation:fade 1s ease}@keyframes fade{0%{opacity:0}100%{opacity:1}}.hide{display:none}#temps{position:relative}.episode__img{aspect-ratio:3 / 2;background:#111215;border-radius:4px;overflow:hidden;position:relative}.episode__img img{width:100%;aspect-ratio:3 / 2;object-fit:cover;transition:transform 250ms linear;z-index:3;position: inherit;}.episode__info__title{font-size:17px;transition:color 250ms ease;color:var(--white);opacity:.8;margin-top:10px;font-weight:400}.caps-grid li{margin-bottom:20px;position:relative}.caps-grid li:hover>.episode>.episode__img img{transform:scale(1.2)}.caps-grid li:hover>.episode>.episode__img .play-btn-hover{opacity:1}.caps-grid li:hover>.episode>.epsiode__info>.episode__info__title{color:var(--main-color);opacity:.9}.episode__info__duration{position: absolute; top: 0; right: 0; margin: 10px; border-radius: 3px; padding: 3px 5px; background: rgba(0,0,0,.4); font-size: 14px;z-index:4}@media screen and (max-width:1100px){.caps-grid{grid-template-columns:repeat(4,1fr)}}@media screen and (max-width:870px){.caps-grid{grid-template-columns:repeat(3,1fr)}}@media screen and (max-width:650px){.caps-grid{grid-template-columns:repeat(2,1fr)}}
+.episode__no-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 90%;
+    display: grid;
+    place-items: center;
+  	font-size:60px;z-index:2
+}  
+/*Video*/
+.post-body-wrapper{max-width:90%;margin:20px auto}.video-title span{color:var(--main-color)}.bs-video-player{margin-bottom:100px}.player-options{display:flex;gap:10px;margin:20px 0;overflow-x:auto}.player-options li{display:inline-block;padding:10px 20px;background:var(--black-2);border-radius:10px;cursor:pointer}.player-options li.active{background:var(--main-color)}.bs-iframes li{padding:10px;display:none;background:var(--black-2);border-radius:10px;overflow:hidden;aspect-ratio:20 / 7}.bs-iframes li.active{display:block}.bs-iframes iframe{width:100%;height:100%;overflow:hidden;border-radius:10px}.bs-video-controls{display:flex;justify-content:space-between;align-items:center;gap:10px}.control{background:var(--main-color);display:flex;align-items:center;gap:10px;margin-top:20px;padding:10px;cursor:pointer;border-radius:5px;font-size:18px}.sub-menu{border-top:3px solid var(--main-color)}.control-disabled{background:var(--black-2);-webkit-user-select:none;-ms-user-select:none;user-select:none;cursor:not-allowed}@media only screen and (max-width:870px){.sub-menu{border-top:none}}@media only screen and (max-width:1050px){.bs-iframes li{aspect-ratio:16 / 9}}@media only screen and (max-width:580px){.player-options li,.control{font-size:15px;padding:5px 10px;border-radius:2px}}
+  </style>
+
 
 <br>
+<p class="resume"></p>
 
-<br>
+<div class="more-data">
 
-    <div class="video-container"> Espera 10 segunsos hasta que cargue...
+<p></p>
 
-        
+</div>
 
-     <iframe class="embed-responsive-item" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="true"
+</ul></div>
 
-             
+</div>
 
-     
+<a name="more"></a>
 
-             id="my_iframe"
+<div class="bs-video-player">
 
-         
+<ul class="player-options">
 
-             scrolling="no" src="https://dumper-true.com/dashdumper.php?url=aHR0cHM6Ly9kY2UtYWstbGl2ZXd3ZGF6bi5ha2FtYWl6ZWQubmV0L2Rhc2hkcm0vZGF6bi1saW5lYXItMDM5L3N0cmVhbS5tcGQ/cD13ZWI&k1=ODJmOGUyYTE3ZGFjNDRjMGExOGY2NjA0NzkzNDljNTk=&k2=MWIxNDRmNzNlNmZlZmU5MWNkMDVmODUwZTJiNTg5ZDA=&aut=true&lang=0
+ /<li class="active">OPCIÓN 1</li>
 
-" width="100%" height="100%"
+<li>OPCIÓN 2</li>
 
-            
+</ul>
 
-             ></iframe>
+<ul class="bs-iframes">
 
-     </div>
+<li class="active"><iframe allow="encrypted-media" allowfullscreen="" frameborder="0" gesture="media" height="200" sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation " src="https://dumper-true.com/dashdumper.php?url=aHR0cHM6Ly8xMTA0LXZvcy5kdHZvdHQuY29tL0RBU0gvbWFuaWZlc3QubXBk&k1=ZGEzODdjMmQ4OWI2MzdiN2I4NjEyNDRlNjRhOThkNDc=&k2=YWEzZmEwNmJjMzY0MzA5YjY3MWYzMjE4YjgwMGFkZmY=&aut=true&lang=0" width="1000"></iframe> </li>
+  
+<li><iframe allow="encrypted-media" allowfullscreen="" frameborder="0" gesture="media" height="200" sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation " src="https://videos.footballia.net/uploads/video/source_file/50314/2022_Argentina_-_France_-_2.mp4" width="1000"></iframe> </li>
 
-    <br>
-
-    </div>
-
-    <script>
-
-    function myFunction() {
-
-      var x = document.getElementById("myTopnav");
-
-      if (x.className === "topnav") {
-
-        x.className += " responsive";
-
-      } else {
-
-        x.className = "topnav";
-
-      }
-
-    }
-
-    </script>
-
-    <footer>
-
-    
-
-    
-
-    
-
-    </footer>
-
-<script>function toggleFullscreen() {
-
-  let elem = document.querySelector("iframe");
-
-  if (!document.fullscreenElement) {
-
-    elem.requestFullscreen().catch((err) => {
-
-      alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
-
-    });
-
-  } else {
-
-    document.exitFullscreen();
-
-  }
-
-}</script>
+<li><iframe allow="encrypted-media" allowfullscreen="" frameborder="0" gesture="media" height="200" sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation " src="https://videos.footballia.net/uploads/video/source_file/50315/2022_Argentina_-_France_-_3.mp4" width="1000"></iframe> </li>
+  
+<li><iframe allow="encrypted-media" allowfullscreen="" frameborder="0" gesture="media" height="200" sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation " src="https://videos.footballia.net/uploads/video/source_file/50316/2022_Argentina_-_France_-_4.mp4" width="1000"></iframe> </li>
+  
+<li><iframe allow="encrypted-media" allowfullscreen="" frameborder="0" gesture="media" height="200" sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation " src="https://videos.footballia.net/uploads/video/source_file/50317/2022_Argentina_-_France_-_5.mp4" width="1000"></iframe> </li>
+  
+<li><iframe allow="encrypted-media" allowfullscreen="" frameborder="0" gesture="media" height="200" sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation " src="https://videos.footballia.net/uploads/video/source_file/50318/2022_Argentina_-_France_-_6.mp4" width="1000"></iframe> </li>
+  
 
   
 
-      
+</ul>
 
-      
+</div>
 
-     
+<script>
+
+const opcionesVideo=document.querySelector(".player-options").querySelectorAll("li"),videoIframes=document.querySelector(".bs-iframes").querySelectorAll("li");opcionesVideo.forEach((e,o)=>{e.addEventListener("click",()=>{opcionesVideo.forEach((e,o)=>{e.classList.remove("active"),videoIframes[o].classList.remove("active")}),e.classList.add("active"),videoIframes[o].classList.add("active")})});
+
+</script></div>
+</div></div>
+<div class="no-items section" id="bs-banners">
+</div>
+</div>
+
+<!-- Google analytics -->
+
+
+</body></html>
